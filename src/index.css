@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #f6f5f0;
+    color: #0a0a0a;
+    scroll-padding-top: 5.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+
+  code,
+  pre,
+  kbd {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Crisp warm-paper subtle dot texture */
+.bg-paper-grid {
+  background-image: radial-gradient(rgba(10, 10, 10, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Tactile ink offset utility */
+.ink-card {
+  border: 1.5px solid #0a0a0a;
+  box-shadow: 4px 4px 0px #0a0a0a;
+}
+
+.ink-card-sm {
+  border: 1.5px solid #0a0a0a;
+  box-shadow: 2.5px 2.5px 0px #0a0a0a;
+}
+
+/* Custom thin light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 10, 10, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a0a0a;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "RepoMind",
+  "description": "AI-powered GitHub codebase assistant built with LangChain and LangGraph. Understand any codebase, investigate deeper, and ship with confidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
